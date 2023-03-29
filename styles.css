@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    color: black;
+  }
+  
+  .parent-container {
+    display: flex;
+  }
+  
+  .parent-container > .left-side-container img{
+    width: 20px;
+    height: 20px;
+  }
+  .header-container {
+    height: 60px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    z-index: 99;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .header-container > .inside-header-container > .dashboard-text{
+    font-size: 25px;
+    color: #959595;
+  }
+
+  .left-side-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+    border-right: 2px solid rgba(31, 42, 85, 0.15);
+    padding-top: 40px;
+    height: 100vh;
+  }
+
+  .left-side-container > .shutdown-container{
+    margin-top: 350px;
+  }
+  
+  .inside-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 2px solid rgba(31, 42, 85, 0.15);
+  }
+  
+  .inside-header-container .left-data {
+    color: #5C5C5C;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: justify;
+  }
+  
+  .inside-header-container .right-data {
+    color: black;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .inside-header-container > .right-data > img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .inside-header-container > .right-data > .rowena-text{
+    font-weight: 600;
+    color: #959595;
+    font-size: 25px;
+  }
+
+  .nft-card-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    /* border: 2px solid blue; */
+    width: 100%;
+    background: #FAFAFE;
+  }
+
+  .nft-market-container{
+    padding-left: 20px;
+  }
+
+  .nft-market-container .nft-investment-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .nft-text-image h4{
+    color: black;
+  }
+
+  .investment-text-image h4{
+    color: black;
+  }
+
+  .investment-text-image img{
+    /* border: 2px solid red; */
+    padding: 20px;
+    box-shadow: 0px -11.6375px 37.3625px rgba(0, 0, 0, 0.03);
+    border-radius: 4.9px;
+    background: #FFFFFF;
+    width: 500px;
+  }
+
+  .nft-text-image img{
+    /* border: 2px solid blue; */
+    padding: 20px;
+    box-shadow: 0px -11.6375px 37.3625px rgba(0, 0, 0, 0.03);
+    border-radius: 4.9px;
+    background: #FFFFFF;
+    width: 500px;
+  }
+
+  /* ...................................my card css.................................... */
+  /* .my-card-container{
+    border: 2px solid red;
+  } */
+
+  .my-card-container{
+    padding-left: 20px;
+  }
+
+  .my-card-container .my-card-text-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .my-card-container .my-card-text-container h4{
+    color: black;
+  }
+  
+ 
+  .my-card-container{
+    width: 40%;
+    border-left: 1px solid rgba(31, 42, 85, 0.15);
+  }
+
+  .my-card-text-container img{
+    width: 250px;
+    /* border: 2px solid green; */
+    padding: 20px;
+  }
+
+  .top-picks-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-picks-container img{
+    padding: 10px;
+    width: 80%;
+}
+
+/* ................nft owned................ */
+
+.nft-owned-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nft-owned-container .images{
+    margin: 5px;
+    gap: 20px;
+    border-radius: 5px;
+    width: 90%;
+    box-shadow: 0px -11.6375px 37.3625px rgba(0, 0, 0, 0.03);
+    padding: 5px;
+    background-color: white;
+}
+.nft-my-portfolio-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.total-distribution-container img{
+  width: 220px;
+}
+
+.images-text-slider {
+  display: flex;
+  gap: 20px;
+}
+.images-text-slider img{
+  width:40px;
+}
+
+.total-distribution-container > img{
+  padding-top: 30px;
+  width: 80%;
+}
+.text-left-right-arrow-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ...........................slider css................................ */
+
+.slider {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    width: 100%;
+}
+.images img {
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+    background-color: #E6DCFD;
+}
+
+.dots label:hover 
+{
+  background-color: #986EFA;
+}
+
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+
+
+.images-text-slider > .image-text {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 20px;
+    border-radius: 5px;
+    box-shadow: 0px -11.6375px 37.3625px rgba(0, 0, 0, 0.03);
+    background-color: white;
+}
+
+.nft-owned-container > .nft-owner-data-sub-container{
+  display: flex;
+  padding: 10px;
+  box-shadow: 0px -11.6375px 37.3625px rgba(0, 0, 0, 0.03); 
+  color: white; 
+  align-items: center; 
+  gap: 60px
+}
