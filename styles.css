@@ -125,6 +125,8 @@
 
   .my-card-container{
     padding-left: 20px;
+    width: 50%;
+    border-left: 1px solid rgba(31, 42, 85, 0.15);
   }
 
   .my-card-container .my-card-text-container{
@@ -135,11 +137,6 @@
     color: black;
   }
   
- 
-  .my-card-container{
-    width: 40%;
-    border-left: 1px solid rgba(31, 42, 85, 0.15);
-  }
 
   .my-card-text-container img{
     width: 250px;
@@ -149,11 +146,14 @@
   .top-picks-container {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 
   .top-picks-container img{
-    padding: 20px;
+    padding: 10px;
     width: 100%;
+    background-color: white;
+    box-shadow: 0px -11.6375px 37.3625px rgba(0, 0, 0, 0.03);
 }
 
 /* ................nft owned................ */
@@ -193,7 +193,7 @@
 
 .total-distribution-container > img{
   padding-top: 30px;
-  width: 70%;
+  width: 60%;
 }
 .text-left-right-arrow-container{
   display: flex;
@@ -257,18 +257,19 @@
 .images-text-slider > .image-text {
     display: flex;
     align-items: center;
-    padding: 5px;
     gap: 20px;
     border-radius: 5px;
     box-shadow: 0px -11.6375px 37.3625px rgba(0, 0, 0, 0.03);
     background-color: white;
+    padding: 20px;
 }
 
 .nft-owned-container > .nft-owner-data-sub-container{
   display: flex;
-  padding: 10px;
+  padding: 15px;
   box-shadow: 0px -11.6375px 37.3625px rgba(0, 0, 0, 0.03); 
   color: white; 
+  background-color: white;
   align-items: center; 
   gap: 60px
 }
