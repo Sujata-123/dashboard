@@ -90,6 +90,26 @@
     background: #FAFAFE;
   }
 
+  .nft-card-container > .nft-market-container > .nft-investment-container > .nft-text-image > .nft-text-image-sub-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    width: 90%;
+  }
+
+  .nft-card-container > .nft-market-container > .nft-investment-container > .nft-text-image > .nft-text-image-sub-container > .nft-market-place{
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 700;
+    color: #272727;
+  }
+
+  .nft-card-container > .nft-market-container > .nft-investment-container > .nft-text-image > .nft-text-image-sub-container > .dot-market-place{
+    font-weight: 900;
+  }
+
   .nft-market-container{
     padding-left: 20px;
   }
@@ -104,9 +124,25 @@
     font-size: 20px;
   }
 
-  .investment-text-image h4{
+  .investment-text-image > .investment-text-sub-container{
     color: black;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .investment-text-image > .investment-text-sub-container > .investment-stats{
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 700;
+    color: #272727;
+  }
+
+  .investment-text-image > .investment-text-sub-container > .dot-investment-stats{
+    font-weight: 900;
   }
 
   .investment-text-image img{
@@ -129,7 +165,7 @@
   .my-card-container{
     padding-left: 20px;
     width: 50%;
-    border-left: 1px solid rgba(31, 42, 85, 0.15);
+    border-left: 2px solid rgba(31, 42, 85, 0.15);
   }
 
   .my-card-container .my-card-text-container{
@@ -152,6 +188,26 @@
     gap: 10px;
   }
 
+  .top-picks-container > .top-picks-sub-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+  }
+
+  .top-picks-container > .top-picks-sub-container > .top-picks-text{
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .top-picks-container > .top-picks-sub-container > .dots-top-picks{
+    font-weight: 900;
+    color: black;
+  }
+
   .top-picks-container img{
     padding: 10px;
     width: 90%;
@@ -165,7 +221,25 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: -10px;
+  color: black;
+}
+
+.nft-owned-container > .nft-owner-sub-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nft-owned-container > .nft-owner-sub-container > .nft-owned-text{
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  color: #272727;
+}
+
+.nft-owned-container > .nft-owner-sub-container > .dots-nft-owned{
+  font-weight: 900;
 }
 
 .nft-owned-container > h4{
@@ -208,6 +282,13 @@ font-size: 20px;
   justify-content: space-between;
 }
 
+.text-left-right-arrow-container .portfolio-text{
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  color: black;
+}
 /* ...........................slider css................................ */
 
 .slider {
@@ -288,4 +369,8 @@ font-size: 20px;
 
 .roma-revenu-sub-container span{
   color: black;
+}
+
+.roma-revenu-sub-container img{
+  width: 15px;
 }
