@@ -98,12 +98,15 @@
     display: flex;
     justify-content: center;
   }
+
   .nft-text-image h4{
     color: black;
+    font-size: 20px;
   }
 
   .investment-text-image h4{
     color: black;
+    font-size: 20px;
   }
 
   .investment-text-image img{
@@ -151,7 +154,7 @@
 
   .top-picks-container img{
     padding: 10px;
-    width: 100%;
+    width: 90%;
     background-color: white;
     box-shadow: 0px -11.6375px 37.3625px rgba(0, 0, 0, 0.03);
 }
@@ -162,8 +165,12 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: -10px;
 }
 
+.nft-owned-container > h4{
+font-size: 20px;
+}
 .nft-owned-container .images{
     margin: 5px;
     gap: 20px;
@@ -272,4 +279,13 @@
   background-color: white;
   align-items: center; 
   gap: 60px
+}
+
+.nft-owner-data-sub-container .roma-revenu-main-container .roma-revenu-sub-container{
+  display: flex;
+  align-items: center;
+}
+
+.roma-revenu-sub-container span{
+  color: black;
 }
